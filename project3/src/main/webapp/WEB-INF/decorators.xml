@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decorators defaultdir="/decorators">
+    <!-- Any urls that are excluded will never be decorated by Sitemesh -->
+    <excludes>
+        <pattern>/api*</pattern>
+    </excludes>
+    
+    <!-- apply Sitemesh default template -->
+    <decorator name="home" page="admin.jsp">
+        
+        
+    </decorator>
+    
+    <decorator name="trang-chu" page="web.jsp">
+    <pattern>/home</pattern>
+        <pattern>/trang-chu</pattern>
+        <pattern>/login</pattern>
+        <pattern>/dang-xuat</pattern>
+        <pattern>/chiTietSanPham</pattern>
+        <pattern>/themvaogiohang</pattern>
+        <pattern>/size</pattern>
+        <pattern>/timkiemsanpham</pattern>
+        <pattern>/timKiemDanhMuc</pattern>
+        <pattern>/mua</pattern>
+        <pattern>/dangkydonhang</pattern>
+         <pattern>/guinhanxet</pattern>
+         <pattern>/hoanthanh</pattern>
+    </decorator>
+    
+    <decorator name="login" page="login.jsp">
+        <pattern>/dang-nhap</pattern>
+        <pattern>/dang-ky</pattern>
+    </decorator>
+</decorators>
